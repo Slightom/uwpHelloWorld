@@ -8,6 +8,13 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <RelativePanel BorderBrush="Green" BorderThickness="30" Background="AliceBlue">
+            <TextBlock x:Name="firstText" Text="Click me please.." FontSize="40" Margin="25" RelativePanel.Below="button1"
+                       RelativePanel.AlignHorizontalCenterWith="button1"/>
+            <Button Click="button1_Click" x:Name="button1" Content="Click me!" Width="200" Height="80" RelativePanel.AlignHorizontalCenterWithPanel="True"
+                    RelativePanel.AlignVerticalCenterWithPanel="True"/>
+            
 
+        </RelativePanel>
     </Grid>
 </Page>

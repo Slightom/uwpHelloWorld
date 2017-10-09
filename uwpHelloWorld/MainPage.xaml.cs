@@ -26,5 +26,10 @@ namespace uwpHelloWorld
         {
             this.InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            firstText.Text = "hello world!!!";
+        }
     }
 }
