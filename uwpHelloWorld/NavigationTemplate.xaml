@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="uwpHelloWorld.NavigationTemplate"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:uwpHelloWorld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel  Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Horizontal">
+            <Button Name="HomeButton" Margin="0,0,20,0" Content="Home" Click="HomeButton_Click"/>
+            <Button Name="BackButton" Margin="0,0,20,0" Content="Back" Click="BackButton_Click"/>
+            <Button Name="ForwardButton" Margin="0,0,20,0" Content="Forward" Click="ForwardButton_Click"/>
+            <Button Name="NavigationButton" Margin="0,0,20,0" Content="NavigationRootFrame" Click="NavigationButton_Click"/>
+        </StackPanel>
+        <Frame Name="MyFrame">
+
+        </Frame>
+    </StackPanel>
+</Page>
